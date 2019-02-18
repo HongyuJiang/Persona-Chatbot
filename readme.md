@@ -53,3 +53,12 @@
 
 1. A Survey on Dialogue Systems: Recent Advances and New Frontiers
 > 对话系统调查：近期进展与前沿
+
+2. Deep Reinforcement Learning for Dialogue Generation
+> 使用深度强化学习生成对话
+
+3. Adversarial Learning for Neural Dialogue Generation
+> 使用对抗网络生成对话
+
+4. Dialogue Learning With Human-In-The-Loop
+> 基于人类循环的对话学习
