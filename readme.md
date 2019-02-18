@@ -1,4 +1,4 @@
-## Personality Generation
+## Personality Generation in Text
 
 1. An Embodied Dialogue System with Personality and Emotions
 > 一种具有个性和情绪的嵌入式对话系统
@@ -15,7 +15,19 @@
 5. Personality Modeling in Dialogue Systems
 > 对话系统中个性建模
 
-## Personality Detection
+6. A Persona-Based Neural Conversation Model
+> 基于角色的神经会话模型
+
+7. Assigning Personality/Identity to a Chatting Machine for Coherent Conversation Generation
+> 为聊天机器分配个性/身份以进行连续对话生成
+
+8. A Neural Chatbot with Personality
+> 具有个性的神经聊天机器人
+
+9. Personalizing Dialogue Agents: I have a dog, do you have pets too?
+> 个性化对话代理：我有一只狗，你也养宠物吗？
+
+## Personality Detection in Text
 
 1. 25 Tweets to Know You: A New Model to Predict Personality with Social Media
 > 25条微博就能了解你: 一种在社交媒体中预测用户个性的全新模型
@@ -28,3 +40,16 @@
 
 4. PROFILING A SET OF PERSONALITY TRAITS OF TEXT AUTHOR: WHAT OUR WORDS REVEAL ABOUT US
 > 剖析文本作者的个性特征: 哪些词语揭露了我们的个性
+
+## Natural Language Processing and Generation
+
+1. Visualizing and Understanding Neural Models in NLP
+> 可视化和理解自然语言处理中的神经网络模型
+
+2. A Persona-Based Neural Conversation Model
+> 基于人物角色的神经网络对话模型
+
+## Dialogue Systems
+
+1. A Survey on Dialogue Systems: Recent Advances and New Frontiers
+> 对话系统调查：近期进展与前沿
