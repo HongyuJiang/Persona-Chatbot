@@ -1,4 +1,36 @@
+## Personality	
+- 一组精神特质（类型）
+    - 解释和预测思想，感觉和方式的模式 行为
+    - 随着时间和环境保持相对稳定
+- 人与人之间的差异来源
+    - 影响关系，工作，学习等的成功概率
+    - 解释35％的生活满意度差异
+- 比较：收入（4％），就业（4％），婚姻状况（1％到4％）
+- 检测与欺骗行为相互作用，意见，情感等
+
+## Application
+- 人格检测
+- 精准广告
+- 自适应接口和机器人行为
+    - 音乐，风格，色调，色彩等
+- 心理诊断，法医学
+    - 精神病患者，大规模杀人犯，欺凌者，受害者
+    - 抑郁，自杀倾向
+- 人力资源管理
+- 文学科学研究，社会心理学，社会语言学等
+
 ## Dataset
+
+1. Persona-chat
+> Scale: 160k+
+> Link: 
+
+2. 15 Best Chatbot Datasets for Machine Learning
+> https://gengo.ai/datasets/15-best-chatbot-datasets-for-machine-learning/
+
+## Word Embedding
+
+- Glove: Global vectors for word representation
 
 ## Personality Generation in Text
 
@@ -37,21 +69,31 @@
 > 有源代码
 
 9. Personalizing Dialogue Agents: I have a dog, do you have pets too?
-> 个性化对话代理：我有一只狗，你也养宠物吗？
+> 个性化对话代理：我有一只狗，你也养宠物吗？</br>
+> 将给定的个人简介信息作为条件，利用正在交谈的人的信息来预测下一句对话。</br>
+> 已知对方的角色对结果影响不大。因为人们趋向于谈自己感兴趣的事情。</br>
+- 采用信息检索模型，监督嵌入模型构建基线模型
+- 添加个人简介信息的排序记忆网络模型
+- Key-Value个人简介记忆网络
+- Seq2Seq
+- 生成个人简介记忆网络
 
 ## Personality Detection in Text
 
 1. 25 Tweets to Know You: A New Model to Predict Personality with Social Media
-> 25条微博就能了解你: 一种在社交媒体中预测用户个性的全新模型
+> 25条微博就能了解你: 一种在社交媒体中预测用户个性的全新模型 </br>
+> 使用词嵌入和高斯回归的方法对推文作者的性格进行预测
 
 2. Exploring personality prediction from text on social media: A literature review
-> 于社交媒体文本中探索用户的个性的预测方法: 一个文献综述
+> 于社交媒体文本中探索用户的个性的预测方法: 一个文献综述 </br>
+> 简单的论文数量，使用数据类型，调查用户数量进行了统计
 
-3. Profiling Personality of Social Media Authors
-> 剖析社交媒体中作者的个性
+3. PROFILING A SET OF PERSONALITY TRAITS OF TEXT AUTHOR: WHAT OUR WORDS REVEAL ABOUT US
+> 剖析文本作者的个性特征: 词汇的使用是揭露我们个性的 </br>
+> 根据具有不同词性的词语的使用频率、词汇多样性等信息，对用户的自毁行为倾向进行预测 
 
-4. PROFILING A SET OF PERSONALITY TRAITS OF TEXT AUTHOR: WHAT OUR WORDS REVEAL ABOUT US
-> 剖析文本作者的个性特征: 哪些词语揭露了我们的个性
+4. Personality Detection by Analysis of Twitter Profiles
+> 通过分析Twitter个人信息进行个性检测
 
 ## Natural Language Processing and Generation
 
@@ -74,3 +116,7 @@
 
 4. Dialogue Learning With Human-In-The-Loop
 > 基于人类循环的对话学习
+
+## Chatbot Evaluation
+
+1. Automatic Evaluation of Neural Personality-based Chatbots
