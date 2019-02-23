@@ -2,12 +2,15 @@
 
 1. An Embodied Dialogue System with Personality and Emotions
 > 一种具有个性和情绪的嵌入式对话系统
+> 价值不大
 
 2. Varying Personality in Spoken Dialogue with a Virtual Human
 > 与虚拟人口语对话中的人格变化
+> 价值不大
 
 3. PERSONAGE: Personality Generation for Dialogue
 > PERSONAGE: 对话个性生成器
+> 识别句子当中的性格
 
 4. Using Linguistic Cues for the Automatic Recognition of Personality in Conversation and Text
 > 采用语言线索实现对会话及文本中个性的自动识别
