@@ -29,6 +29,8 @@
 
 - 文学科学研究，社会心理学，社会语言学等
 
+- Learning the inherent attributes of dialogues explicitly is another way to improve the diversity of dialogues and ensures the consistency. Among different attributes, topic and personality are widely explored. 
+
 ## Dataset
 
 - Question-Answer Datasets
@@ -80,37 +82,46 @@
 
 1. An Embodied Dialogue System with Personality and Emotions
 > 一种具有个性和情绪的嵌入式对话系统 </br>
-> **价值不大**
+> **价值不大** </br>
+> Date: 2010 
 
 2. Varying Personality in Spoken Dialogue with a Virtual Human
 > 与虚拟人口语对话中的人格变化 </br>
-> **价值不大**
+> **价值不大** </br>
+> Date: 2009 
 
 3. PERSONAGE: Personality Generation for Dialogue
 > PERSONAGE: 对话个性生成器 </br>
-> 识别句子当中的性格:内向还是外向
+> 使用决策树识别句子当中的性格:内向还是外向 </br>
+> Date: 2007
 
 4. Using Linguistic Cues for the Automatic Recognition of Personality in Conversation and Text
 > 采用语言线索实现对会话及文本中个性的自动识别 </br>
-> 使用句子中的词语和决策树技术对作者的性格进行识别:内向还是外向
+> 使用句子中的词语和决策树技术对作者的性格进行识别:内向还是外向 </br>
+> Date: 2007
 
 5. Personality Modeling in Dialogue Systems 
 > 对话系统中个性建模 </br>
-> 使用句子中的词语和决策树技术对作者的性格进行识别:内向还是外向
+> 使用句子中的词语和决策树技术对作者的性格进行识别:内向还是外向 </br>
+> Date: 2008
 
 6. A Persona-Based Neural Conversation Model
 > 基于角色的神经会话模型 </br>
-> Seq2Seq模型 使用LSTM对单个角色的对话进行学习
+> Seq2Seq模型 使用LSTM对单个角色的对话进行学习 </br>
+> Date: 2016
 
 7. Assigning Personality/Identity to a Chatting Machine for Coherent Conversation Generation
 > 为聊天机器分配个性/身份以进行连续对话生成 </br>
+> gave the system an identity with profile so that the system can answer personalized question consistently. </br>
 > 为机器人分配固有属性，从问答数据、微博数据等中学习根据被分配的固有属性进行回答。 </br>
-> 缺点：需要处理和标记的数据太多，并且只针对属性相关的问答进行优化。
+> 缺点：需要处理和标记的数据太多，并且只针对属性相关的问答进行优化。 </br>
+> Date: 2017
 
 8. A Neural Chatbot with Personality
 > 具有个性的神经聊天机器人 </br>
 > 通过对不同角色的对话进行单独建模，学习该角色的个性信息，从而产生具有个性的机器人。 </br>
-> 有源代码
+> 有源代码 </br>
+> Date: 2017
 
 9. Personalizing Dialogue Agents: I have a dog, do you have pets too?
 > 个性化对话代理：我有一只狗，你也养宠物吗？</br>
@@ -121,63 +132,119 @@
 - Key-Value个人简介记忆网络
 - Seq2Seq
 - 生成个人简介记忆网络
+> Date: 2018
 
 10. A Persona-Based Neural Conversation Model
 > 基于人物角色的神经网络对话模型 </br>
-> Based on LSTM and individual's tweets
+> Based on LSTM and individual's tweets </br>
+> Date: 2016
 
 11. Personality for Your Chatbot with Recurrent Neural Networks
-> https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636
+> https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636 </br>
+> Date: 2017
+
+12. Topic Aware Neural Response Generation
+> 在生成对话中加入主题信息 </br>
+> They noticed that people often associate their dialogues with topically related concepts and create their responses according to these concepts. They used Twitter LDA model to get the topic of the input, fed topic information and input representation into a joint attention module and generated a topic-related response.  </br>
+> Date: 2016
+
+13. Domain Aware Neural Dialog System
+> 在生成对话中加入领域信息 </br>
+> It  made a more thorough generalization of the problem. They classified each utterance in the dialogue into one domain, and generated the domain and content of next utterance accordingly. </br>
+> Date: 2017
+
+14. Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation
+> It jointly modeled the high-level coarse tokens sequence and the dialogue generation explicitly, where the coarse tokens sequence aims to exploit high-level semantics. They exploited nouns and activity-entity for the coarse sequence representation. </br>
+> Date: 2016
+
+15. Emotional chatting machine: Emotional conversation generation with internal and external memory
+> Added emotion embedding into a generative model and achieved good performance in perplexity. </br>
+> Date: 2017
+
+16. Affective Neural Response Generation
+> Enhanced the model of producing emotionally rich responses from three aspects: incorporating cognitive engineered affective word embeddings, augmenting the loss objective with an affectconstrained objective function, and injecting affective dissimilarity in diverse beam-search inference procedure. </br>
+> Date: 2017
+
+17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models
+> Date: 2016
+
+18. Neural Personalized Response Generation as Domain Adaptation
+> further took the information of addressee into consideration to create a more realistic chatbot. Since the training data comes from different speakers with inconsistency. </br>
+> Date: 2017
+
+19. Personalizing a Dialogue System with Transfer Reinforcement Learning
+> used transfer reinforcement learning to eliminate inconsistencies. </br>
+> Date: 2016
 
 ## Personality Detection in Text
 
 1. 25 Tweets to Know You: A New Model to Predict Personality with Social Media
 > 25条微博就能了解你: 一种在社交媒体中预测用户个性的全新模型 </br>
-> 使用词嵌入和高斯回归的方法对推文作者的性格进行预测
+> 使用词嵌入和高斯回归的方法对推文作者的性格进行预测 </br>
+> Date: 2017
 
 2. Exploring personality prediction from text on social media: A literature review
 > 于社交媒体文本中探索用户的个性的预测方法: 一个文献综述 </br>
-> 简单的论文数量，使用数据类型，调查用户数量进行了统计
+> 简单的论文数量，使用数据类型，调查用户数量进行了统计 </br>
+> Date: 2017
 
 3. PROFILING A SET OF PERSONALITY TRAITS OF TEXT AUTHOR: WHAT OUR WORDS REVEAL ABOUT US
 > 剖析文本作者的个性特征: 词汇的使用是揭露我们个性的 </br>
-> 根据具有不同词性的词语的使用频率、词汇多样性等信息，对用户的自毁行为倾向进行预测 
+> 根据具有不同词性的词语的使用频率、词汇多样性等信息，对用户的自毁行为倾向进行预测 </br>
+> Date: 2016
 
 4. Personality Detection by Analysis of Twitter Profiles
-> 通过分析Twitter个人信息进行个性检测
+> 通过分析Twitter个人信息进行个性检测 </br>
+> Date: 2017
 
 ## Chatbot / NLP
 
 1. Visualizing and Understanding Neural Models in NLP
-> 可视化和理解自然语言处理中的神经网络模型
+> 可视化和理解自然语言处理中的神经网络模型 </br>
+> Date: 2015
 
 2. A New Chatbot for Customer Service on Social Media
-> 一种基于LSTM的社交媒体客户服务聊天机器人
+> 一种基于LSTM的社交媒体客户服务聊天机器人 </br>
+> Date: 2017
 
 3. Intelligent Chatbot using Deep Learning
-> A Master Thesis, A Chatbot based on LSTM
+> A Master Thesis, A Chatbot based on LSTM </br>
+> Date: 2017
 
 ## Dialogue Systems
 
 1. A Survey on Dialogue Systems: Recent Advances and New Frontiers
-> 对话系统调查：近期进展与前沿
+> 对话系统调查：近期进展与前沿 </br>
+> Date: 2017
 
 2. Deep Reinforcement Learning for Dialogue Generation
-> 使用深度强化学习生成对话
+> 使用深度强化学习生成对话 </br>
+> Date: 2016
 
 3. Adversarial Learning for Neural Dialogue Generation
-> 使用对抗网络生成对话
+> 使用对抗网络生成对话 </br>
+> Date: 2017
 
 4. Dialogue Learning With Human-In-The-Loop
-> 基于人类循环的对话学习
+> 基于人类循环的对话学习 </br>
+> Date: 2016
 
 ## Chatbot Evaluation
 
 1. Automatic Evaluation of Neural Personality-based Chatbots
-> 基于人格的神经网络聊天机器人的自动评估
+> 基于人格的神经网络聊天机器人的自动评估 </br>
+> Date: 2018
 
 2. Why people use chatbots?
 > 为什么人们要使用聊天机器人? </br>
 > 该文章能够作为聊天机器人的设计指南 </br>
-> 部分原因： Categories which involved: Productivity, Entertainment, Social/relational, Novelty/
-Curiosity.
+> 部分原因： Categories which involved: Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
+> Date: 2017
+
+## Proposals
+
+- Visualization and Understanding Personality in Dialogue
+
+- Chatting under User's Personality: A Intelligent Neural Chatbot 
+
+- A Survey on Personalizing Dialogue Agents
