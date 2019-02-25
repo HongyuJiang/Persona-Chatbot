@@ -1,3 +1,5 @@
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 ## Personality	
 
 - 一组精神特质（类型）
@@ -29,7 +31,7 @@
 
 - 文学科学研究，社会心理学，社会语言学等
 
-- Learning the inherent attributes of dialogues explicitly is another way to improve the diversity of dialogues and ensures the consistency. Among different attributes, topic and personality are widely explored. 
+- 明确的学习对话中的固有属性是提高对话多样性和连贯性的一种方法，在不同的属性中，主题和个性被广泛的探索。 
 
 ## Dataset
 
@@ -112,7 +114,7 @@
 
 7. Assigning Personality/Identity to a Chatting Machine for Coherent Conversation Generation
 > 为聊天机器分配个性/身份以进行连续对话生成 </br>
-> gave the system an identity with profile so that the system can answer personalized question consistently. </br>
+> Gave the system an identity with profile so that the system can answer personalized question consistently. </br>
 > 为机器人分配固有属性，从问答数据、微博数据等中学习根据被分配的固有属性进行回答。 </br>
 > 缺点：需要处理和标记的数据太多，并且只针对属性相关的问答进行优化。 </br>
 > Date: 2017
@@ -145,20 +147,21 @@
 
 12. Topic Aware Neural Response Generation
 > 在生成对话中加入主题信息 </br>
-> They noticed that people often associate their dialogues with topically related concepts and create their responses according to these concepts. They used Twitter LDA model to get the topic of the input, fed topic information and input representation into a joint attention module and generated a topic-related response.  </br>
+> 人类的聊天过程中常常围绕在一个显性或者隐性的主题下的概念中，并且回答的内容也根据概念而生成。 </br>
+> 该论文使用推特数据结合LDA算法建立对话主题识别模型，将句子的主题信息和输入相结合生成主题相关的回答。 </br>
 > Date: 2016
 
 13. Domain Aware Neural Dialog System
 > 在生成对话中加入领域信息 </br>
-> It  made a more thorough generalization of the problem. They classified each utterance in the dialogue into one domain, and generated the domain and content of next utterance accordingly. </br>
+> 将对话中的每一次发言中的主题信息进行识别，并生成回复的主题信息和详细内容</br>
 > Date: 2017
 
 14. Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation
-> It jointly modeled the high-level coarse tokens sequence and the dialogue generation explicitly, where the coarse tokens sequence aims to exploit high-level semantics. They exploited nouns and activity-entity for the coarse sequence representation. </br>
+> 该论文对高级浅层标记序列和对话生成进行联合建模，其中标记序列旨在挖掘高级语义信息。为了进行粗浅序列表示，他们从对话中发现名词和活动实体。</br>
 > Date: 2016
 
 15. Emotional chatting machine: Emotional conversation generation with internal and external memory
-> Added emotion embedding into a generative model and achieved good performance in perplexity. </br>
+> 将情感信息嵌入到对话生成模型中，在困惑度中表现良好. </br>
 > Date: 2017
 
 16. Affective Neural Response Generation
@@ -169,11 +172,11 @@
 > Date: 2016
 
 18. Neural Personalized Response Generation as Domain Adaptation
-> further took the information of addressee into consideration to create a more realistic chatbot. Since the training data comes from different speakers with inconsistency. </br>
+> Further took the information of addressee into consideration to create a more realistic chatbot. Since the training data comes from different speakers with inconsistency. </br>
 > Date: 2017
 
 19. Personalizing a Dialogue System with Transfer Reinforcement Learning
-> used transfer reinforcement learning to eliminate inconsistencies. </br>
+> Used transfer reinforcement learning to eliminate inconsistencies. </br>
 > Date: 2016
 
 ## Personality Detection in Text
@@ -240,6 +243,11 @@
 > 该文章能够作为聊天机器人的设计指南 </br>
 > 部分原因： Categories which involved: Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
 > Date: 2017
+
+3. Perplexity
+困惑度（perplexity）的基本思想是：给测试集的句子赋予较高概率值的语言模型较好,当语言模型训练完之后，测试集中的句子都是正常的句子，那么训练好的模型就是在测试集上的概率越高越好，公式如下：
+$$ PP(W)=P(w_{1}w_{2}...w_{N})^{-\frac{1}{N}}=\sqrt[N]{\frac{1}{P(w_{1}w_{2}...w_{N}}} $$
+由公式可知，句子概率越大，语言模型越好，迷惑度越小。
 
 ## Proposals
 
