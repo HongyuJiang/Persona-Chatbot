@@ -1,35 +1,25 @@
 
 ## Personality	
-
 - 一组精神特质（类型）
     - 解释和预测思想，感觉和方式的模式 行为
     - 随着时间和环境保持相对稳定
-
 - 人与人之间的差异来源
     - 影响关系，工作，学习等的成功概率
     - 解释35％的生活满意度差异
-
 - 比较：收入（4％），就业（4％），婚姻状况（1％到4％）
-
 - 检测与欺骗行为相互作用，意见，情感等
 
 ## Application
 
 - 人格检测
-
 - 精准广告
-
 - 自适应接口和机器人行为
     - 音乐，风格，色调，色彩等
-
 - 心理诊断，法医学
     - 精神病患者，大规模杀人犯，欺凌者，受害者
     - 抑郁，自杀倾向
-    
 - 人力资源管理
-
 - 文学科学研究，社会心理学，社会语言学等
-
 - 明确的学习对话中的固有属性是提高对话多样性和连贯性的一种方法，在不同的属性中，主题和个性被广泛的探索。 
 
 ## Dataset
@@ -164,18 +154,21 @@
 > Date: 2017
 
 16. Affective Neural Response Generation
-> Enhanced the model of producing emotionally rich responses from three aspects: incorporating cognitive engineered affective word embeddings, augmenting the loss objective with an affectconstrained objective function, and injecting affective dissimilarity in diverse beam-search inference procedure. </br>
+> 从三个方面增强了产生具有情绪反应的对话模型：1.结合认知工程的情感词嵌入，2.使用受影响的目标函数增强损失对象，3.在不同的波束搜索推理过程中注入情感差异。 </br>
 > Date: 2017
 
-17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models
+17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models </br>
+> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果
+> Diverse Beam Search: 分多组做Beam Search, 并且保持组间的多样性 </br>
 > Date: 2016
 
+
 18. Neural Personalized Response Generation as Domain Adaptation
-> Further took the information of addressee into consideration to create a more realistic chatbot. Since the training data comes from different speakers with inconsistency. </br>
+> 进一步考虑了对话接收者的信息，以创建一个更现实的聊天机器人。 由于训练数据来自不同的发言者，能够稳定的产生不同的聊天风格. </br>
 > Date: 2017
 
 19. Personalizing a Dialogue System with Transfer Reinforcement Learning
-> Used transfer reinforcement learning to eliminate inconsistencies. </br>
+> 使用转移强化学习来增强对话连贯性 </br>
 > Date: 2016
 
 ## Personality Detection in Text
@@ -240,16 +233,26 @@
 2. Why people use chatbots?
 > 为什么人们要使用聊天机器人? </br>
 > 该文章能够作为聊天机器人的设计指南 </br>
-> 部分原因： Categories which involved: Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
+> 部分原因：Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
 > Date: 2017
 
-3. Perplexity
+### Evaluation Method
+
+- Turing Test
+
+- Perplexity
 >困惑度（perplexity）的基本思想是：给测试集的句子赋予较高概率值的语言模型较好,当语言模型训练完之后，测试集中的句子都是正常的句子，那么训练好的模型就是在测试集上的概率越高越好，公式如下：
 
 ![123](https://latex.codecogs.com/png.latex?P(W)=P(w_{1}w_{2}...w_{N})^{-\frac{1}{N}}=\sqrt[N]{\frac{1}{P(w_{1}w_{2}...w_{N})}})
 
 由公式可知，句子概率越大，语言模型越好，迷惑度越小。
 
+- BLEU
+> BLEU 是一种对模型输出和参考答案的 n-gram 进行比较并计算匹配片段个数的方法. 这些匹配片段与它们在上下文 (Context) 中存在的位置无关, 这里仅认为匹配片段数越多, 模型输出的质量越好. BLEU 首先会对语料库中所有语料进行 n-gram 的精度 (Precision) 计算 (这里假设对于每一条文本, 都有且只有一条候选回复):
+
+![123](https://latex.codecogs.com/png.latex?P_{n}(r,\hat{r})=\frac{\sum_{k} min(h(k,r), h(k,r_{i}))}{\sum_{k}h(k,r_{i})})
+- METEOR
+- ROUGE
 
 ## Proposals
 
