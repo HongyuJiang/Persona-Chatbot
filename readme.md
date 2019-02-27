@@ -1,3 +1,4 @@
+# Personalizing Dialogue System - A Note
 
 ## Personality	
 - 一组精神特质（类型）
@@ -23,6 +24,12 @@
 - 明确的学习对话中的固有属性是提高对话多样性和连贯性的一种方法，在不同的属性中，主题和个性被广泛的探索。 
 
 ## Dataset
+
+- Persona-Chat
+> https://github.com/facebookresearch/ParlAI/tree/master/parlai/mturk/tasks/personachat/personachat_chat
+
+- Personalized bAbI Dialog
+> Link: https://www.dropbox.com/s/4i9u4y24pt3paba/personalized-dialog-dataset.tar.gz?dl=1
 
 - Question-Answer Datasets
 
@@ -171,6 +178,14 @@
 > 使用转移强化学习来增强对话连贯性 </br>
 > Date: 2016
 
+20. Social Media Sources for Personality Profiling
+> 文本的长度和数量，语法，缩写，拼写和语法错误的不同以及主题的差异会影响预处理的类型和难度，提取正确的文本，模型训练的准确性，训练文本的时间片抽样，以及随时间推移的准确性下降速度 </br>
+> Date: 2017
+
+21. 'Ruspersonality': a Russian Corpus for Authorship Profiling and Deception Detection
+> 一个俄罗斯语料库 </br>
+> Date: 2016
+
 ## Personality Detection in Text
 
 1. 25 Tweets to Know You: A New Model to Predict Personality with Social Media
@@ -208,21 +223,41 @@
 
 ## Dialogue Systems
 
-1. A Survey on Dialogue Systems: Recent Advances and New Frontiers
+### Goal-oriented
+
+A Survey on Dialogue Systems: Recent Advances and New Frontiers
 > 对话系统调查：近期进展与前沿 </br>
 > Date: 2017
 
-2. Deep Reinforcement Learning for Dialogue Generation
-> 使用深度强化学习生成对话 </br>
-> Date: 2016
+- Pipeline
+    - Natural Language Understanding
+    - Dialogue State Tracer
+    - Dialogue Tictac Learning
+    - Natural Language Generation 
 
-3. Adversarial Learning for Neural Dialogue Generation
-> 使用对抗网络生成对话 </br>
-> Date: 2017
+- End to End
+
+### Open domain
+
+- Generation
+
+    1. Deep Reinforcement Learning for Dialogue Generation
+    > 使用深度强化学习生成对话 </br>
+    > Date: 2016
+
+    2. Adversarial Learning for Neural Dialogue Generation
+    > 使用对抗网络生成对话 </br>
+    > Date: 2017
+
+
+- Query-based
 
 4. Dialogue Learning With Human-In-The-Loop
 > 基于人类循环的对话学习 </br>
 > Date: 2016
+
+5. Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models
+> 使用了 latent variable 来解决无意义回复(e.g. I don't known)这个问题。
 
 ## Chatbot Evaluation
 
@@ -235,6 +270,11 @@
 > 该文章能够作为聊天机器人的设计指南 </br>
 > 部分原因：Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
 > Date: 2017
+
+## Weakness
+- 无法灵活调整语言风格
+- 缺少根据用户信息动态调整对话策略的能力
+- 难以处理用户请求中的歧义项
 
 ### Evaluation Method
 
@@ -250,9 +290,13 @@
 - BLEU
 > BLEU 是一种对模型输出和参考答案的 n-gram 进行比较并计算匹配片段个数的方法. 这些匹配片段与它们在上下文 (Context) 中存在的位置无关, 这里仅认为匹配片段数越多, 模型输出的质量越好. BLEU 首先会对语料库中所有语料进行 n-gram 的精度 (Precision) 计算 (这里假设对于每一条文本, 都有且只有一条候选回复):
 
-![123](https://latex.codecogs.com/png.latex?P_{n}(r,\hat{r})=\frac{\sum_{k} min(h(k,r), h(k,r_{i}))}{\sum_{k}h(k,r_{i})})
+![123](https://latex.codecogs.com/gif.latex?P_{n}(r,\hat{r})=\frac{\sum_{k}&space;min(h(k,r),&space;h(k,r_{i}))}{\sum_{k}h(k,r_{i})})
+
 - METEOR
+> METEOR 矩阵会在候选答案与目标回复之间产生一个明确的分界线 (这个分界线是基于一定优先级顺序确定的, 优先级从高到低依次是: 特定的序列匹配、同义词、词根和词缀、释义). 有了分界线之后, METEOR 可以把参考答案与模型输出的精度 (Precision) 与召回率 (Recall) 的调和平均值作为结果进行评价. 具体的作法是: 对于一个模型输出 c 与其对应的参考答案 r 的 (c, r)序列 m, METEOR 矩阵值是其精度 Pm 与召回率 Rm 的调和平均值, Pen 是根据已有的正确答案预先计算出的一个惩罚因子, 公式中的 α, β, γ 都是具有默认值的超参数常量.
+
 - ROUGE
+> ROUGE 是一系列用于自动生成文本摘要的评价矩阵, 记为 ROUGE-L, 它是通过对候选句与目标句之间的最长相同子序列 (longest common subsequence, LCS) 计算 F 值 (F-measure) 得到的. LCS 是在两句话中都按相同次序出现的一组词序列, 与 n-gram 不同的是, LCS 不需要保持连续(即在 LCS 中间可以出现其他的词). 公式中 sij 表示与候选回复 ci 对应的第 j 个模型输出, l(ci, sij )表示两者间 LCS 的长度, β 是超参数常量.
 
 ## Proposals
 
@@ -261,3 +305,7 @@
 - Chatting under User's Personality: A Intelligent Neural Chatbot 
 
 - A Survey on Personalizing Dialogue Agents
+
+## Others
+
+如果Encoder是RNN的话，理论上越是后输入的单词影响越大，并非等权的，这也是为何Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好的小Trick的原因
