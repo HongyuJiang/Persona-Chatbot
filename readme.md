@@ -10,6 +10,10 @@
 - 比较：收入（4％），就业（4％），婚姻状况（1％到4％）
 - 检测与欺骗行为相互作用，意见，情感等
 
+### Personality Recognizer
+
+- Using Linguistic Inquiry and Word Count dictionary
+
 ## Application
 
 - 人格检测
@@ -26,10 +30,13 @@
 ## Dataset
 
 - Persona-Chat
-> https://github.com/facebookresearch/ParlAI/tree/master/parlai/mturk/tasks/personachat/personachat_chat
+> Link: https://github.com/facebookresearch/ParlAI/tree/master/parlai/mturk/tasks/personachat/personachat_chat
 
 - Personalized bAbI Dialog
 > Link: https://www.dropbox.com/s/4i9u4y24pt3paba/personalized-dialog-dataset.tar.gz?dl=1
+
+- The Persuasion and Personality Corpus
+> Link: https://nlds.soe.ucsc.edu/persuasion_persona 
 
 - Question-Answer Datasets
 
@@ -76,7 +83,7 @@
 
 - Glove: Global vectors for word representation
 
-## Personality Generation in Text
+## Topic/Personality in Text
 
 1. An Embodied Dialogue System with Personality and Emotions
 > 一种具有个性和情绪的嵌入式对话系统 </br>
@@ -125,11 +132,12 @@
 > 个性化对话代理：我有一只狗，你也养宠物吗？</br>
 > 将给定的个人简介信息作为条件，利用正在交谈的人的信息来预测下一句对话。</br>
 > 已知对方的角色对结果影响不大。因为人们趋向于谈自己感兴趣的事情。</br>
-- 采用信息检索模型，监督嵌入模型构建基线模型
-- 添加个人简介信息的排序记忆网络模型
-- Key-Value个人简介记忆网络
-- Seq2Seq
-- 生成个人简介记忆网络
+> - 采用信息检索模型，监督嵌入模型构建基线模型
+> - 添加个人简介信息的排序记忆网络模型
+> - Key-Value个人简介记忆网络
+> - Seq2Seq
+> - 生成个人简介记忆网络 
+
 > Date: 2018
 
 10. A Persona-Based Neural Conversation Model
@@ -165,7 +173,7 @@
 > Date: 2017
 
 17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models </br>
-> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果
+> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果 </br>
 > Diverse Beam Search: 分多组做Beam Search, 并且保持组间的多样性 </br>
 > Date: 2016
 
@@ -186,7 +194,29 @@
 > 一个俄罗斯语料库 </br>
 > Date: 2016
 
-## Personality Detection in Text
+22. A Context Based Dialog System with a Personality
+> End 2 End </br>
+> 在Speaker Model 中嵌入人物性格 </br>
+> Date: 2018 
+
+23. soc2seq: Social Embedding meets Conversation Model
+> 在生成回复的文本模型中考虑了用户的内容偏好和用户交谈的特性 </br>
+> Date: 2017
+
+24. User Modeling for Task Oriented Dialogues
+> Date: 2018
+
+25. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
+> 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
+> Open-Domain End2End </br>
+> Date: 2018
+
+26. End-to-End Knowledge-Routed Relational Dialogue System for
+Automatic Diagnosis
+> 基于知识导向的对话诊断系统 </br>
+> Date: 2019
+
+## Personality Detection
 
 1. 25 Tweets to Know You: A New Model to Predict Personality with Social Media
 > 25条微博就能了解你: 一种在社交媒体中预测用户个性的全新模型 </br>
@@ -271,6 +301,10 @@ A Survey on Dialogue Systems: Recent Advances and New Frontiers
 > 部分原因：Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
 > Date: 2017
 
+3. Automatic Evaluation of Neural Personality-based Chatbots
+> 使用特殊词语的个性得分，对句子和文本的性格得分进行计算，将其加入语言生成模型，对对话生成模型进行在线评估 </br>
+> Date: 2018
+
 ## Weakness
 - 无法灵活调整语言风格
 - 缺少根据用户信息动态调整对话策略的能力
@@ -293,10 +327,27 @@ A Survey on Dialogue Systems: Recent Advances and New Frontiers
 ![123](https://latex.codecogs.com/gif.latex?P_{n}(r,\hat{r})=\frac{\sum_{k}&space;min(h(k,r),&space;h(k,r_{i}))}{\sum_{k}h(k,r_{i})})
 
 - METEOR
-> METEOR 矩阵会在候选答案与目标回复之间产生一个明确的分界线 (这个分界线是基于一定优先级顺序确定的, 优先级从高到低依次是: 特定的序列匹配、同义词、词根和词缀、释义). 有了分界线之后, METEOR 可以把参考答案与模型输出的精度 (Precision) 与召回率 (Recall) 的调和平均值作为结果进行评价. 具体的作法是: 对于一个模型输出 c 与其对应的参考答案 r 的 (c, r)序列 m, METEOR 矩阵值是其精度 Pm 与召回率 Rm 的调和平均值, Pen 是根据已有的正确答案预先计算出的一个惩罚因子, 公式中的 α, β, γ 都是具有默认值的超参数常量.
+> METEOR 矩阵会在候选答案与目标回复之间产生一个明确的分界线 (这个分界线是基于一定优先级顺序确定的, 优先级从高到低依次是: 特定的序列匹配、同义词、词根和词缀、释义). 有了分界线之后, METEOR 可以把参考答案与模型输出的精度 (Precision) 与召回率 (Recall) 的调和平均值作为结果进行评价. 具体的作法是: 对于一个模型输出 c 与其对应的参考答案 r 的 (c, r)序列 m, METEOR 矩阵值是其精度 Pm 与召回率 Rm 的调和平均值, Pen 是根据已有的正确答案预先计算出的一个惩罚因子, 公式中的 α, β, θ 都是具有默认值的超参数常量.
+
+![123](https://latex.codecogs.com/gif.latex?\small&space;F_{mean}=&space;\frac{P_{m}R_{m}}{\alpha&space;P{m}&plus;(1-\alpha)R_{m}})
+
+![123](https://latex.codecogs.com/gif.latex?\mathrm{Pen}=&space;\gamma(\mathrm{frag})^\theta)
+
+![123](https://latex.codecogs.com/gif.latex?\mathrm{METEOR}&space;=&space;(1-\mathrm{Pen})F_{mean})
+
 
 - ROUGE
 > ROUGE 是一系列用于自动生成文本摘要的评价矩阵, 记为 ROUGE-L, 它是通过对候选句与目标句之间的最长相同子序列 (longest common subsequence, LCS) 计算 F 值 (F-measure) 得到的. LCS 是在两句话中都按相同次序出现的一组词序列, 与 n-gram 不同的是, LCS 不需要保持连续(即在 LCS 中间可以出现其他的词). 公式中 sij 表示与候选回复 ci 对应的第 j 个模型输出, l(ci, sij )表示两者间 LCS 的长度, β 是超参数常量.
+
+![123](https://latex.codecogs.com/gif.latex?R&space;=&space;\underset{j}{max}\frac{l(c_{i},s_{ij})}{\left&space;|&space;s_{ij}&space;\right&space;|})
+
+
+![123](https://latex.codecogs.com/gif.latex?P&space;=&space;\underset{j}{max}\frac{l(c_{i},s_{ij})}{\left&space;|&space;c_{ij}&space;\right&space;|})
+
+
+![123](https://latex.codecogs.com/gif.latex?\mathrm{ROUGE}_{\mathrm{L}}(c_{i},&space;s_{i})&space;=&space;\frac{(1&plus;\beta^{2})RP}{R&plus;\beta^{2}P})
+
+
 
 ## Proposals
 
@@ -309,3 +360,11 @@ A Survey on Dialogue Systems: Recent Advances and New Frontiers
 ## Others
 
 如果Encoder是RNN的话，理论上越是后输入的单词影响越大，并非等权的，这也是为何Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好的小Trick的原因
+
+### Computerized text analysis
+
+- Link: http://liwc.wpengine.com/
+
+### How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy
+
+- Link: https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd
