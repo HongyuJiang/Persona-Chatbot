@@ -74,7 +74,11 @@
 
 ## Word Embedding
 
-- Glove: Global vectors for word representation
+ - word2vec (Mikolov et al., 2013)
+ 
+ - GloVe (Pennington et al., 2014}
+ 
+ - CoVe (Mccann et al., 2017 )
 
 ## Personality Generation in Text
 
