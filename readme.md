@@ -34,50 +34,58 @@
 
 **Defination**: A dialogue system, or conversational agent (CA), is a computer system intended to converse with a human with a coherent structure. Dialogue systems have employed text, speech, graphics, haptics, gestures, and other modes for communication on both the input and output channel. (Definetion from Wiki)
 
-- Why people use chatbots?
+### Why people use chatbots?
 > 为什么人们要使用聊天机器人? </br>
 > 该文章能够作为聊天机器人的设计指南 </br>
 > Some reasons：Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
 > Date: 2017
 
-**A Survey on Dialogue Systems: Recent Advances and New Frontiers**
+### A Survey on Dialogue Systems: Recent Advances and New Frontiers
 > 对话系统调查：近期进展与前沿 </br>
 > Date: 2017
 
 
 ### Goal-oriented
 
-- Pipeline
-    - Natural Language Understanding
-    - Dialogue State Tracer
-    - Dialogue Tictac Learning
-    - Natural Language Generation 
+#### Pipeline
 
-- End to End
-    
-    1. End-to-End Knowledge-Routed Relational Dialogue System for
-    Automatic Diagnosis
-    > 基于知识导向的对话诊断系统 </br>
-    > Date: 2019
+- Natural Language Understanding
+- Dialogue State Tracer
+- Dialogue Tictac Learning
+- Natural Language Generation 
+
+#### End to End
+
+1. End-to-End Knowledge-Routed Relational Dialogue System for
+Automatic Diagnosis
+> 基于知识导向的对话诊断系统 </br>
+> Date: 2019
+ 
+
+-----
+
 
 ### Open domain
 
-- Generation
+#### Generation
 
-    1. Deep Reinforcement Learning for Dialogue Generation
-    > 使用深度强化学习生成对话 </br>
-    > Date: 2016
+1. Deep Reinforcement Learning for Dialogue Generation
+> 使用深度强化学习生成对话 </br>
+> Date: 2016
 
-    2. Adversarial Learning for Neural Dialogue Generation
-    > 使用对抗网络生成对话 </br>
-    > Date: 2017
+2. Adversarial Learning for Neural Dialogue Generation
+> 使用对抗网络生成对话 </br>
+> Date: 2017
 
-    3. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
-    > 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
-    > Open-Domain End2End </br>
-    > Date: 2018
+3. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
+> 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
+> Open-Domain End2End </br>
+> Date: 2018
 
-- Query-based
+#### Query-based
+> TBA
+
+----
 
 ### Diversification
 
@@ -156,14 +164,14 @@
 
 ## Topic/Personality in Text
 
-How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy
+#### How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy
 
-Link: https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd
+> Link: https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd
+
+#### Computerized text analysis
+> Link: http://liwc.wpengine.com/
 
 ### Traditional Method
-
-Computerized text analysis
-Link: http://liwc.wpengine.com/
 
 1. INDIGO: Interaction with Personality and Dialogue Enabled Robots
 > 预设不同的性格给机器人，使其完成不同的任务，例如具有开放性格的机器人将更多地关注用户的请求，而具有高度责任感的机器人将倾向于推荐欣赏展览的最佳路线</br>
@@ -198,10 +206,12 @@ Link: http://liwc.wpengine.com/
 > 使用句子中的词语和决策树技术对作者的性格进行识别:内向还是外向 </br>
 > Date: 2008
 
+---
+
 ### Deep Learning Based
 
-Personality for Your Chatbot with Recurrent Neural Networks</br>
-https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636 </br>
+#### Personality for Your Chatbot with Recurrent Neural Networks
+> https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636 </br>
 
 1. A Persona-Based Neural Conversation Model
 > 基于角色的神经会话模型 </br>
@@ -390,4 +400,3 @@ https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neura
 ## P.S
 
 >如果Encoder是RNN的话，后输入的单词会稀释之前单词的权重，因此所有的单词并非等权的，Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好。
-
