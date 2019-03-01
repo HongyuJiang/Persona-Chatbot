@@ -78,7 +78,11 @@
 
 ## Word Embedding
 
-- Glove: Global vectors for word representation
+ - word2vec (Mikolov et al., 2013)
+ 
+ - GloVe (Pennington et al., 2014}
+ 
+ - CoVe (Mccann et al., 2017 )
 
 ## Topic/Personality in Text
 
@@ -169,49 +173,35 @@
 > 从三个方面增强了产生具有情绪反应的对话模型：1.结合认知工程的情感词嵌入，2.使用受影响的目标函数增强损失对象，3.在不同的波束搜索推理过程中注入情感差异。 </br>
 > Date: 2017
 
-17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models </br>
-> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果 </br>
-> Diverse Beam Search: 分多组做Beam Search, 并且保持组间的多样性 </br>
-> Date: 2016
-
-
-18. Neural Personalized Response Generation as Domain Adaptation
+17. Neural Personalized Response Generation as Domain Adaptation
 > 进一步考虑了对话接收者的信息，以创建一个更现实的聊天机器人。 由于训练数据来自不同的发言者，能够稳定的产生不同的聊天风格. </br>
 > Date: 2017
 
-19. Personalizing a Dialogue System with Transfer Reinforcement Learning
+18. Personalizing a Dialogue System with Transfer Reinforcement Learning
 > 使用转移强化学习来增强对话连贯性 </br>
 > Date: 2016
 
-20. Social Media Sources for Personality Profiling
+19. Social Media Sources for Personality Profiling
 > 文本的长度和数量，语法，缩写，拼写和语法错误的不同以及主题的差异会影响预处理的类型和难度，提取正确的文本，模型训练的准确性，训练文本的时间片抽样，以及随时间推移的准确性下降速度 </br>
 > Date: 2017
 
-21. 'Ruspersonality': a Russian Corpus for Authorship Profiling and Deception Detection
+20. 'Ruspersonality': a Russian Corpus for Authorship Profiling and Deception Detection
 > 一个俄罗斯语料库 </br>
 > Date: 2016
 
-22. A Context Based Dialog System with a Personality
+21. A Context Based Dialog System with a Personality
 > End 2 End </br>
 > 在Speaker Model 中嵌入人物性格 </br>
 > Date: 2018 
 
-23. soc2seq: Social Embedding meets Conversation Model
+22. soc2seq: Social Embedding meets Conversation Model
 > 在生成回复的文本模型中考虑了用户的内容偏好和用户交谈的特性 </br>
 > Date: 2017
 
-24. User Modeling for Task Oriented Dialogues
+23. User Modeling for Task Oriented Dialogues
+> End 2 End </br>
 > Date: 2018
 
-25. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
-> 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
-> Open-Domain End2End </br>
-> Date: 2018
-
-26. End-to-End Knowledge-Routed Relational Dialogue System for
-Automatic Diagnosis
-> 基于知识导向的对话诊断系统 </br>
-> Date: 2019
 
 ## Personality Detection
 
@@ -264,6 +254,9 @@ A Survey on Dialogue Systems: Recent Advances and New Frontiers
 
 - End to End
 
+    1. Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models
+    > 使用了 latent variable 来解决无意义回复(e.g. I don't known)这个问题。
+
 ### Open domain
 
 - Generation
@@ -279,12 +272,27 @@ A Survey on Dialogue Systems: Recent Advances and New Frontiers
 
 - Query-based
 
-4. Dialogue Learning With Human-In-The-Loop
+- Dialogue Learning With Human-In-The-Loop
 > 基于人类循环的对话学习 </br>
+> 基于强化学习，机器人作出回应后，教师作出反馈，机器人通过反馈来提高其问答能力。 </br>
 > Date: 2016
 
-5. Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models
-> 使用了 latent variable 来解决无意义回复(e.g. I don't known)这个问题。
+
+17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models </br>
+> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果 </br>
+> Diverse Beam Search: 分多组做Beam Search, 并且保持组间的多样性 </br>
+> Date: 2016
+
+26. End-to-End Knowledge-Routed Relational Dialogue System for
+Automatic Diagnosis
+> 基于知识导向的对话诊断系统 </br>
+> Date: 2019
+
+
+25. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
+> 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
+> Open-Domain End2End </br>
+> Date: 2018
 
 ## Chatbot Evaluation
 
