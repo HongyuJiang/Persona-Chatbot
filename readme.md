@@ -10,13 +10,10 @@
 - 比较：收入（4％），就业（4％），婚姻状况（1％到4％）
 - 检测与欺骗行为相互作用，意见，情感等
 
-### Personality Recognizer
-
-- Using Linguistic Inquiry and Word Count dictionary
-
 ## Application
 
 - 人格检测
+    - Using Linguistic Inquiry and Word Count dictionary
 - 精准广告
 - 自适应接口和机器人行为
     - 音乐，风格，色调，色彩等
