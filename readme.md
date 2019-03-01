@@ -7,8 +7,14 @@
 - 人与人之间的差异来源
     - 影响关系，工作，学习等的成功概率
     - 解释35％的生活满意度差异
-- 比较：收入（4％），就业（4％），婚姻状况（1％到4％）
+- 比较：收入(4％)，就业(4％)，婚姻状况(1％到4％)
 - 检测与欺骗行为相互作用，意见，情感等
+
+### Mesurement Index
+
+**PAD**: pleasure (P), arousal (A), and dominance (D) 
+
+**Big Five**: openness to experience, conscientiousness, extraversion, agreeableness, and neuroticism, 
 
 ## Application
 
@@ -24,7 +30,73 @@
 - 文学科学研究，社会心理学，社会语言学等
 - 明确的学习对话中的固有属性是提高对话多样性和连贯性的一种方法，在不同的属性中，主题和个性被广泛的探索。 
 
-## Dataset
+## Dialogue Systems
+
+**Defination**: A dialogue system, or conversational agent (CA), is a computer system intended to converse with a human with a coherent structure. Dialogue systems have employed text, speech, graphics, haptics, gestures, and other modes for communication on both the input and output channel. (Definetion from Wiki)
+
+- Why people use chatbots?
+> 为什么人们要使用聊天机器人? </br>
+> 该文章能够作为聊天机器人的设计指南 </br>
+> Some reasons：Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
+> Date: 2017
+
+**A Survey on Dialogue Systems: Recent Advances and New Frontiers**
+> 对话系统调查：近期进展与前沿 </br>
+> Date: 2017
+
+
+### Goal-oriented
+
+- Pipeline
+    - Natural Language Understanding
+    - Dialogue State Tracer
+    - Dialogue Tictac Learning
+    - Natural Language Generation 
+
+- End to End
+    
+    1. End-to-End Knowledge-Routed Relational Dialogue System for
+    Automatic Diagnosis
+    > 基于知识导向的对话诊断系统 </br>
+    > Date: 2019
+
+### Open domain
+
+- Generation
+
+    1. Deep Reinforcement Learning for Dialogue Generation
+    > 使用深度强化学习生成对话 </br>
+    > Date: 2016
+
+    2. Adversarial Learning for Neural Dialogue Generation
+    > 使用对抗网络生成对话 </br>
+    > Date: 2017
+
+    3. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
+    > 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
+    > Open-Domain End2End </br>
+    > Date: 2018
+
+- Query-based
+
+### Diversification
+
+- Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models </br>
+> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果 </br>
+> Diverse Beam Search: 分多组做Beam Search, 并且保持组间的多样性 </br>
+> Date: 2016
+
+- Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models
+> 使用了 latent variable 来解决无意义回复(e.g. I don't known)这个问题。
+
+### Supervised Improvement
+
+- Dialogue Learning With Human-In-The-Loop
+> 基于人类循环的对话学习 </br>
+> 基于强化学习，机器人作出回应后，回答者作出反馈，机器人通过反馈来提高其问答能力。 </br>
+> Date: 2016
+
+## Corpus
 
 - Persona-Chat
 > Link: https://github.com/facebookresearch/ParlAI/tree/master/parlai/mturk/tasks/personachat/personachat_chat
@@ -37,23 +109,21 @@
 
 - Question-Answer Datasets
 
-    - The WikiQA corpus: A publicly available set of question and sentence pairs, collected and annotated for research on open-domain question answering. In order to reflect the true information need of general users, we used Bing query logs as the question source. Each question is linked to a Wikipedia page that potentially has the answer.
-
-    - Yahoo Language Data: This page features manually curated QA datasets from Yahoo Answers from Yahoo.
-
-    - TREC QA Collection: TREC has had a question answering track since 1999. In each track, the task was defined such that the systems were to retrieve small snippets of text that contained an answer for open-domain, closed-class questions.
+    - The WikiQA corpus
+    - Yahoo Language Data
+    - TREC QA Collection
 
 - Customer Support Datasets
 
-    - Ubuntu Dialogue Corpus: Consists of almost one million two-person conversations extracted from the Ubuntu chat logs, used to receive technical support for various Ubuntu-related problems. The full dataset contains 930,000 dialogues and over 100,000,000 words
+    - Ubuntu Dialogue Corpus
 
-    - Relational Strategies in Customer Service Dataset: A collection of travel-related customer service data from four sources. The conversation logs of three commercial customer service IVAs and the Airline forums on TripAdvisor.com during August 2016.
+    - Relational Strategies in Customer Service Dataset
 
-    - Customer Support on Twitter: This dataset on Kaggle includes over 3 million tweets and replies from the biggest brands on Twitter.
+    - Customer Support on Twitter
 
 - Dialogue Datasets
 
-    - Semantic Web Interest Group IRC Chat Logs: This automatically generated IRC chat log  is available in RDF, back to 2004, on a daily basis, including time stamps and nicknames.
+    - Semantic Web Interest Group IRC Chat Logs:
 
     - Cornell movie-dialogs corpus: This corpus contains a large metadata-rich collection of fictional conversations extracted from raw movie scripts.
 
@@ -62,13 +132,13 @@
         - In total 304,713 utterances.
         - Link: http://www.cs.cornell.edu/~cristian/Cornell_MovieDialogs_Corpus.html.
 
-    - ConvAI2 Dataset: The dataset contains more than 2000 dialogues for PersonaChat task where human evaluators recruited via the crowd sourcing platform Yandex. Toloka chatted with bots submitted by teams.
+    - ConvAI2 Dataset
 
-    - Santa Barbara Corpus of Spoken American English: This dataset includes approximately 249,000 words of transcription, audio, and timestamps at the level of individual intonation units.
+    - Santa Barbara Corpus of Spoken American English
 
-    - The NPS Chat Corpus: This corpus consists of 10,567 posts out of approximately 500,000 posts gathered from various online chat services in accordance with their terms of service.
+    - The NPS Chat Corpus
 
-    - Maluuba goal-oriented dialogue: Open dialogue dataset where the conversation aims at accomplishing a task or taking a decision – specifically, finding flights and a hotel. The dataset contains complex conversations and decision-making covering 250+ hotels, flights, and destinations.
+    - Maluuba goal-oriented dialogue
 
 - Multilingual Chatbot Datasets
 
@@ -86,20 +156,37 @@
 
 ## Topic/Personality in Text
 
-1. An Embodied Dialogue System with Personality and Emotions
-> 一种具有个性和情绪的嵌入式对话系统 </br>
-> **价值不大** </br>
-> Date: 2010 
+How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy
 
-2. Varying Personality in Spoken Dialogue with a Virtual Human
-> 与虚拟人口语对话中的人格变化 </br>
-> **价值不大** </br>
-> Date: 2009 
+Link: https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd
+
+### Traditional Method
+
+Computerized text analysis
+Link: http://liwc.wpengine.com/
+
+1. INDIGO: Interaction with Personality and Dialogue Enabled Robots
+> 预设不同的性格给机器人，使其完成不同的任务，例如具有开放性格的机器人将更多地关注用户的请求，而具有高度责任感的机器人将倾向于推荐欣赏展览的最佳路线</br>
+> Date: 2008
+
+2. Making Them Remember—Emotional Virtual Characters with Memory
+> 从对话中识别用户的情绪，使虚拟人物做出不同的反应</br>
+> Date: 2009
 
 3. PERSONAGE: Personality Generation for Dialogue
 > PERSONAGE: 对话个性生成器 </br>
 > 使用决策树识别句子当中的性格:内向还是外向 </br>
 > Date: 2007
+
+4. An Embodied Dialogue System with Personality and Emotions
+> 一种具有个性和情绪的嵌入式对话系统 </br>
+> 没有给出具体的实现方案，只是给出宏观框架, A Tactical Questioning system </br>
+> Date: 2010 
+
+5. Varying Personality in Spoken Dialogue with a Virtual Human
+> 与虚拟人口语对话中的人格变化 </br>
+> A Tactical Questioning system </br>
+> Date: 2009 
 
 4. Using Linguistic Cues for the Automatic Recognition of Personality in Conversation and Text
 > 采用语言线索实现对会话及文本中个性的自动识别 </br>
@@ -111,25 +198,30 @@
 > 使用句子中的词语和决策树技术对作者的性格进行识别:内向还是外向 </br>
 > Date: 2008
 
-6. A Persona-Based Neural Conversation Model
+### Deep Learning Based
+
+Personality for Your Chatbot with Recurrent Neural Networks</br>
+https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636 </br>
+
+1. A Persona-Based Neural Conversation Model
 > 基于角色的神经会话模型 </br>
 > Seq2Seq模型 使用LSTM对单个角色的对话进行学习 </br>
 > Date: 2016
 
-7. Assigning Personality/Identity to a Chatting Machine for Coherent Conversation Generation
+2. Assigning Personality/Identity to a Chatting Machine for Coherent Conversation Generation
 > 为聊天机器分配个性/身份以进行连续对话生成 </br>
 > Gave the system an identity with profile so that the system can answer personalized question consistently. </br>
 > 为机器人分配固有属性，从问答数据、微博数据等中学习根据被分配的固有属性进行回答。 </br>
 > 缺点：需要处理和标记的数据太多，并且只针对属性相关的问答进行优化。 </br>
 > Date: 2017
 
-8. A Neural Chatbot with Personality
+3. A Neural Chatbot with Personality
 > 具有个性的神经聊天机器人 </br>
 > 通过对不同角色的对话进行单独建模，学习该角色的个性信息，从而产生具有个性的机器人。 </br>
 > 有源代码 </br>
 > Date: 2017
 
-9. Personalizing Dialogue Agents: I have a dog, do you have pets too?
+4. Personalizing Dialogue Agents: I have a dog, do you have pets too?
 > 个性化对话代理：我有一只狗，你也养宠物吗？</br>
 > 将给定的个人简介信息作为条件，利用正在交谈的人的信息来预测下一句对话。</br>
 > 已知对方的角色对结果影响不大。因为人们趋向于谈自己感兴趣的事情。</br>
@@ -141,67 +233,63 @@
 
 > Date: 2018
 
-10. A Persona-Based Neural Conversation Model
+5. A Persona-Based Neural Conversation Model
 > 基于人物角色的神经网络对话模型 </br>
 > Based on LSTM and individual's tweets </br>
 > Date: 2016
 
-11. Personality for Your Chatbot with Recurrent Neural Networks
-> https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636 </br>
-> Date: 2017
-
-12. Topic Aware Neural Response Generation
+6. Topic Aware Neural Response Generation
 > 在生成对话中加入主题信息 </br>
 > 人类的聊天过程中常常围绕在一个显性或者隐性的主题下的概念中，并且回答的内容也根据概念而生成。 </br>
 > 该论文使用推特数据结合LDA算法建立对话主题识别模型，将句子的主题信息和输入相结合生成主题相关的回答。 </br>
 > Date: 2016
 
-13. Domain Aware Neural Dialog System
+7. Domain Aware Neural Dialog System
 > 在生成对话中加入领域信息 </br>
 > 将对话中的每一次发言中的主题信息进行识别，并生成回复的主题信息和详细内容</br>
 > Date: 2017
 
-14. Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation
+8. Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation
 > 该论文对高级浅层标记序列和对话生成进行联合建模，其中标记序列旨在挖掘高级语义信息。为了进行粗浅序列表示，他们从对话中发现名词和活动实体。</br>
 > Date: 2016
 
-15. Emotional chatting machine: Emotional conversation generation with internal and external memory
+9. Emotional chatting machine: Emotional conversation generation with internal and external memory
 > 将情感信息嵌入到对话生成模型中，在困惑度中表现良好. </br>
 > Date: 2017
 
-16. Affective Neural Response Generation
+10. Affective Neural Response Generation
 > 从三个方面增强了产生具有情绪反应的对话模型：1.结合认知工程的情感词嵌入，2.使用受影响的目标函数增强损失对象，3.在不同的波束搜索推理过程中注入情感差异。 </br>
 > Date: 2017
 
-17. Neural Personalized Response Generation as Domain Adaptation
+11. Neural Personalized Response Generation as Domain Adaptation
 > 进一步考虑了对话接收者的信息，以创建一个更现实的聊天机器人。 由于训练数据来自不同的发言者，能够稳定的产生不同的聊天风格. </br>
 > Date: 2017
 
-18. Personalizing a Dialogue System with Transfer Reinforcement Learning
+12. Personalizing a Dialogue System with Transfer Reinforcement Learning
 > 使用转移强化学习来增强对话连贯性 </br>
 > Date: 2016
 
-19. Social Media Sources for Personality Profiling
+13. Social Media Sources for Personality Profiling
 > 文本的长度和数量，语法，缩写，拼写和语法错误的不同以及主题的差异会影响预处理的类型和难度，提取正确的文本，模型训练的准确性，训练文本的时间片抽样，以及随时间推移的准确性下降速度 </br>
 > Date: 2017
 
-20. 'Ruspersonality': a Russian Corpus for Authorship Profiling and Deception Detection
-> 一个俄罗斯语料库 </br>
+14. 'Ruspersonality': a Russian Corpus for Authorship Profiling and Deception Detection
+> 一个剖析作者和欺骗检测俄罗斯语语料库 </br>
 > Date: 2016
 
-21. A Context Based Dialog System with a Personality
+15. A Context Based Dialog System with a Personality
 > End 2 End </br>
 > 在Speaker Model 中嵌入人物性格 </br>
 > Date: 2018 
 
-22. soc2seq: Social Embedding meets Conversation Model
+16. soc2seq: Social Embedding meets Conversation Model
 > 在生成回复的文本模型中考虑了用户的内容偏好和用户交谈的特性 </br>
 > Date: 2017
 
-23. User Modeling for Task Oriented Dialogues
-> End 2 End </br>
+17. User Modeling for Task Oriented Dialogues
+> 在生成对话模型中加入用户的目标信息</br> 
+> End 2 End,  Hierarchical Seq2Seq </br>
 > Date: 2018
-
 
 ## Personality Detection
 
@@ -212,7 +300,7 @@
 
 2. Exploring personality prediction from text on social media: A literature review
 > 于社交媒体文本中探索用户的个性的预测方法: 一个文献综述 </br>
-> 简单的论文数量，使用数据类型，调查用户数量进行了统计 </br>
+> 简单的论文热点统计，使用数据类型，调查用户数量进行了统计 </br>
 > Date: 2017
 
 3. PROFILING A SET OF PERSONALITY TRAITS OF TEXT AUTHOR: WHAT OUR WORDS REVEAL ABOUT US
@@ -221,7 +309,7 @@
 > Date: 2016
 
 4. Personality Detection by Analysis of Twitter Profiles
-> 通过分析Twitter个人信息进行个性检测 </br>
+> 通过分析Twitter个人信息和推文进行个性检测 </br>
 > Date: 2017
 
 ## Chatbot / NLP
@@ -238,82 +326,15 @@
 > A Master Thesis, A Chatbot based on LSTM </br>
 > Date: 2017
 
-## Dialogue Systems
-
-### Goal-oriented
-
-A Survey on Dialogue Systems: Recent Advances and New Frontiers
-> 对话系统调查：近期进展与前沿 </br>
-> Date: 2017
-
-- Pipeline
-    - Natural Language Understanding
-    - Dialogue State Tracer
-    - Dialogue Tictac Learning
-    - Natural Language Generation 
-
-- End to End
-
-    1. Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models
-    > 使用了 latent variable 来解决无意义回复(e.g. I don't known)这个问题。
-
-### Open domain
-
-- Generation
-
-    1. Deep Reinforcement Learning for Dialogue Generation
-    > 使用深度强化学习生成对话 </br>
-    > Date: 2016
-
-    2. Adversarial Learning for Neural Dialogue Generation
-    > 使用对抗网络生成对话 </br>
-    > Date: 2017
-
-
-- Query-based
-
-- Dialogue Learning With Human-In-The-Loop
-> 基于人类循环的对话学习 </br>
-> 基于强化学习，机器人作出回应后，教师作出反馈，机器人通过反馈来提高其问答能力。 </br>
-> Date: 2016
-
-
-17. Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models </br>
-> Beam Search: 第一步选择候选词的TopN，此后每次将候选词与此表进行组合，选择候选组合的TopN作为结果 </br>
-> Diverse Beam Search: 分多组做Beam Search, 并且保持组间的多样性 </br>
-> Date: 2016
-
-26. End-to-End Knowledge-Routed Relational Dialogue System for
-Automatic Diagnosis
-> 基于知识导向的对话诊断系统 </br>
-> Date: 2019
-
-
-25. Context-Aware Dialog RE-RANKING FOR TASK-ORIENTED DIALOG SYSTEMS
-> 基于上下文信息匹配程度和候选回复的得分对候选回复进行排序 </br>
-> Open-Domain End2End </br>
-> Date: 2018
-
 ## Chatbot Evaluation
 
-1. Automatic Evaluation of Neural Personality-based Chatbots
+- Automatic Evaluation of Neural Personality-based Chatbots
 > 基于人格的神经网络聊天机器人的自动评估 </br>
 > Date: 2018
 
-2. Why people use chatbots?
-> 为什么人们要使用聊天机器人? </br>
-> 该文章能够作为聊天机器人的设计指南 </br>
-> 部分原因：Productivity, Entertainment, Social/relational, Novelty/Curiosity. </br>
-> Date: 2017
-
-3. Automatic Evaluation of Neural Personality-based Chatbots
+- Automatic Evaluation of Neural Personality-based Chatbots
 > 使用特殊词语的个性得分，对句子和文本的性格得分进行计算，将其加入语言生成模型，对对话生成模型进行在线评估 </br>
 > Date: 2018
-
-## Weakness
-- 无法灵活调整语言风格
-- 缺少根据用户信息动态调整对话策略的能力
-- 难以处理用户请求中的歧义项
 
 ### Evaluation Method
 
@@ -353,6 +374,10 @@ Automatic Diagnosis
 ![123](https://latex.codecogs.com/gif.latex?\mathrm{ROUGE}_{\mathrm{L}}(c_{i},&space;s_{i})&space;=&space;\frac{(1&plus;\beta^{2})RP}{R&plus;\beta^{2}P})
 
 
+## Current weakness 
+- 无法灵活调整语言风格
+- 缺少根据用户信息动态调整对话策略的能力
+- 难以处理用户请求中的歧义项
 
 ## Proposals
 
@@ -362,14 +387,7 @@ Automatic Diagnosis
 
 - A Survey on Personalizing Dialogue Agents
 
-## Others
+## P.S
 
-如果Encoder是RNN的话，理论上越是后输入的单词影响越大，并非等权的，这也是为何Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好的小Trick的原因
+>如果Encoder是RNN的话，后输入的单词会稀释之前单词的权重，因此所有的单词并非等权的，Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好。
 
-### Computerized text analysis
-
-- Link: http://liwc.wpengine.com/
-
-### How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy
-
-- Link: https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd
