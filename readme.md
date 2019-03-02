@@ -1,4 +1,4 @@
-# Personalizing Dialogue System - A Note
+# Personalizing Chatbot - A Note
 
 ## Personality	
 - 一组精神特质（类型）
