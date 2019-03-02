@@ -12,9 +12,9 @@
 
 ### Mesurement Index
 
-**PAD**: pleasure (P), arousal (A), and dominance (D) 
+**PAD emotional state model**: pleasure (P), arousal (A), and dominance (D) 
 
-**Big Five**: openness to experience, conscientiousness, extraversion, agreeableness, and neuroticism, 
+**Big Five personality traits**: openness to experience(O), conscientiousness(C), extraversion(E), agreeableness(A), and neuroticism(N), 
 
 ## Application
 
@@ -69,6 +69,18 @@ Automatic Diagnosis
 
 #### Generation
 
+**Pros:**
+- End-to-end learning
+- Safe responses
+- Easy to be context-aware, emotional and controllable
+
+**Cons:**
+- Hard to evaluate
+- Boring and disfluent responses
+- Require experienced developers
+- UNK
+
+
 1. Deep Reinforcement Learning for Dialogue Generation
 > 使用深度强化学习生成对话 </br>
 > Date: 2016
@@ -82,9 +94,35 @@ Automatic Diagnosis
 > Open-Domain End2End </br>
 > Date: 2018
 
-#### Query-based
-> TBA
+#### Retrieval-based
 
+**Pros:**
+- Diverse and fluent responses
+- Fluent responses
+- Flexible system
+- Easy to evaluation(L2R)
+
+**Cons:**
+- Random response
+- Bundled with query-response pairs
+- Difficult to be context-aware
+
+- Convolutional Neural Network Architectures for Matching Natural Language Sentences
+> 通过在视觉和语音中调整卷积策略，提出用于匹配两个句子的卷积神经网络模型 </br>
+> Date: 2014
+
+- Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots
+> They propose a sequential matching network (SMN) to keep relationships among utterances and important contextual information in concatenates utterances
+> Date: 2018
+
+- DocChat: An Information Retrieval Approach for Chatbot Engines
+Using Unstructured Documents
+> A novel information retrieval approach for chatbot engines that can leverage unstructured documents, instead of Q-R pairs, to respond to utterances.
+> Date: 2016
+
+#### Hybird Method
+- AliMe Chat: A Sequence to Sequence and Rerank based Chatbot Engine
+> An open-domain chatbot engine that integrates the joint results of Information Retrieval (IR) and Sequence to Sequence (Seq2Seq) based generation models
 ----
 
 ### Diversification
