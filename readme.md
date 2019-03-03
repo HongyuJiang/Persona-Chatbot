@@ -1,6 +1,6 @@
 # Personalizing Chatbot - A Note
 
-> A literature prepared for doctor's work </br>
+> A literature survey prepared for doctor's work </br>
 > Author: Hongyu Jiang
 
 ## Content
