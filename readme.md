@@ -1,5 +1,23 @@
 # Personalizing Chatbot - A Note
 
+> A literature prepared for doctor's work </br>
+> Author: Hongyu Jiang
+
+## Content
+
+- [Personality](##Personality)
+- [Application](##Application)
+- [Dialogue Systems](##Dialogue-Systems)
+- [Corpus](##Corpus)
+- [Word Embedding](##Word-Embedding)
+- [Topic/Personality in Text](##Topic/Personality-in-Text)
+- [Personality Detection](##Personality-Detection)
+- [Chatbot](##Chatbot)
+- [Evaluation / NLP](##Evaluation)
+- [Current weakness](##Current-weakness)
+- [Proposals](##Proposals)
+- [Others](##Others)
+
 ## Personality	
 - 一组精神特质（类型）
     - 解释和预测思想，感觉和方式的模式 行为
@@ -144,14 +162,13 @@ Using Unstructured Documents
 
 ## Corpus
 
-- Persona-Chat
-> Link: https://github.com/facebookresearch/ParlAI/tree/master/parlai/mturk/tasks/personachat/personachat_chat
+- Persona-Chat | [Download](https://github.com/facebookresearch/ParlAI/tree/master/parlai/mturk/tasks/personachat/personachat_chat)
 
-- Personalized bAbI Dialog
-> Link: https://www.dropbox.com/s/4i9u4y24pt3paba/personalized-dialog-dataset.tar.gz?dl=1
+- Personalized bAbI Dialog | [Download](https://www.dropbox.com/s/4i9u4y24pt3paba/personalized-dialog-dataset.tar.gz?dl=1)
 
-- The Persuasion and Personality Corpus
-> Link: https://nlds.soe.ucsc.edu/persuasion_persona 
+- The Persuasion and Personality Corpus | [Download](https://nlds.soe.ucsc.edu/persuasion_persona)
+
+- Frames: A Corpus for Adding Memory to Goal-Oriented Dialogue Systems | [Download](https://www.microsoft.com/en-us/research/project/frames-dataset/#!download) 
 
 - Question-Answer Datasets
 
@@ -171,12 +188,11 @@ Using Unstructured Documents
 
     - Semantic Web Interest Group IRC Chat Logs:
 
-    - Cornell movie-dialogs corpus: This corpus contains a large metadata-rich collection of fictional conversations extracted from raw movie scripts.
+    - Cornell movie-dialogs corpus: This corpus contains a large metadata-rich collection of fictional conversations extracted from raw movie scripts. | [Download](http://www.cs.cornell.edu/~cristian/Cornell_MovieDialogs_Corpus.html)
 
         - 220,579 conversational exchanges between 10,292 pairs of movie characters.
         - Involves 9,035 characters from 617 movies.
         - In total 304,713 utterances.
-        - Link: http://www.cs.cornell.edu/~cristian/Cornell_MovieDialogs_Corpus.html.
 
     - ConvAI2 Dataset
 
@@ -192,6 +208,7 @@ Using Unstructured Documents
 
     - EXCITEMENT data sets: These datasets, available in English and Italian, contain negative feedbacks from customers where they state reasons for dissatisfaction with a given company.
 
+
 ## Word Embedding
 
  - word2vec (Mikolov et al., 2013)
@@ -202,12 +219,9 @@ Using Unstructured Documents
 
 ## Topic/Personality in Text
 
-#### How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy
+#### How to Make a Digital Personality of Yourself Using Chatbots, Facebook Messages, and Empathy | [Story](https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd)
 
-> Link: https://chatbotsmagazine.com/how-to-make-a-digital-personality-of-yourself-using-chatbots-facebook-and-empathy-8b0c53afa9bd
-
-#### Computerized text analysis
-> Link: http://liwc.wpengine.com/
+#### Computerized text analysis | [WPEngine](http://liwc.wpengine.com/)
 
 ### Traditional Method
 
@@ -248,8 +262,7 @@ Using Unstructured Documents
 
 ### Deep Learning Based
 
-#### Personality for Your Chatbot with Recurrent Neural Networks
-> https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636 </br>
+#### Personality for Your Chatbot with Recurrent Neural Networks | [Web](https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636)
 
 1. A Persona-Based Neural Conversation Model
 > 基于角色的神经会话模型 </br>
@@ -360,7 +373,7 @@ Using Unstructured Documents
 > 通过分析Twitter个人信息和推文进行个性检测 </br>
 > Date: 2017
 
-## Chatbot / NLP
+## Chatbot
 
 1. Visualizing and Understanding Neural Models in NLP
 > 可视化和理解自然语言处理中的神经网络模型 </br>
@@ -374,7 +387,11 @@ Using Unstructured Documents
 > A Master Thesis, A Chatbot based on LSTM </br>
 > Date: 2017
 
-## Chatbot Evaluation
+4. From Eliza to XiaoIce: Challenges and Opportunities with Social Chatbots 
+> 以微软小冰为例，从核心聊天到视觉意识到技能讨论了构建社交聊天机器人的关键技术 </br>
+> Date: 2018
+
+## Evaluation
 
 - Automatic Evaluation of Neural Personality-based Chatbots
 > 基于人格的神经网络聊天机器人的自动评估 </br>
@@ -435,6 +452,6 @@ Using Unstructured Documents
 
 - A Survey on Personalizing Dialogue Agents
 
-## P.S
+## Others
 
->如果Encoder是RNN的话，后输入的单词会稀释之前单词的权重，因此所有的单词并非等权的，Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好。
+> 如果Encoder是RNN的话，后输入的单词会稀释之前单词的权重，因此所有的单词并非等权的，Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好。
