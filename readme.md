@@ -452,6 +452,8 @@ Using Unstructured Documents
 
 - A Survey on Personalizing Dialogue Agents
 
+- Embedding time-zone and response interval information into chatbot
+
 ## Others
 
 > 如果Encoder是RNN的话，后输入的单词会稀释之前单词的权重，因此所有的单词并非等权的，Google提出Sequence to Sequence模型时发现把输入句子逆序输入做翻译效果会更好。
