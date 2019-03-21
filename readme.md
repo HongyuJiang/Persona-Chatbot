@@ -364,8 +364,8 @@ Using Unstructured Documents
 > 简单的论文热点统计，使用数据类型，调查用户数量进行了统计 </br>
 > Date: 2017
 
-3. PROFILING A SET OF PERSONALITY TRAITS OF TEXT AUTHOR: WHAT OUR WORDS REVEAL ABOUT US
-> 剖析文本作者的个性特征: 词汇的使用是揭露我们个性的 </br>
+3. Profiling a set of personality traits of text author: what our words reveal about us
+> 剖析文本作者的个性特征: 词汇的使用是如何揭露我们个性的 </br>
 > 根据具有不同词性的词语的使用频率、词汇多样性等信息，对用户的自毁行为倾向进行预测 </br>
 > Date: 2016
 
