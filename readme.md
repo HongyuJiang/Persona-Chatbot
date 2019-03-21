@@ -213,7 +213,7 @@ Using Unstructured Documents
 
  - word2vec (Mikolov et al., 2013)
  
- - GloVe (Pennington et al., 2014} | [TensorFlow]{https://josephguhlin.com/importing-glove-embeddings-into-tensorflow/}
+ - GloVe (Pennington et al., 2014} | [TensorFlow](https://josephguhlin.com/importing-glove-embeddings-into-tensorflow/)
  
  - CoVe (Mccann et al., 2017 )
 
