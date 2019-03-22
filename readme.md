@@ -1,5 +1,5 @@
 # Persona Chatbot - Notes and Trials
 
-> Notes are written in Wiki
+> Notes are in Wiki
 
 ![header](header.jpg)
